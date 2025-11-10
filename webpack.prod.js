@@ -7,7 +7,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
-    publicPath: "berhasil/",
+    publicPath: "revisi2/",
     clean: true,
   },
   optimization: {
