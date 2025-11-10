@@ -29,6 +29,12 @@ module.exports = {
           from: "./src/public",
           to: ".",
           noErrorOnMissing: true,
+<<<<<<< HEAD
+=======
+          globOptions: {
+            ignore: ["**/generate-icons.js", "**/*.md", "**/README*"],
+          },
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
         },
         {
           from: "./src/styles/styles.css",
@@ -38,10 +44,13 @@ module.exports = {
           from: "./app.webmanifest",
           to: ".",
         },
+<<<<<<< HEAD
         {
           from: "./sw.js",
           to: ".",
         },
+=======
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
       ],
     }),
   ],

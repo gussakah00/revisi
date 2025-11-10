@@ -2,11 +2,18 @@
   "name": "cerita-di-sekitarmu",
   "version": "1.0.0",
   "description": "Aplikasi berbagi cerita berbasis lokasi",
+<<<<<<< HEAD
   "homepage": "https://gussakah00.github.io/revisi",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "build-dev": "webpack --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js --host localhost",
+=======
+  "homepage": "https://gussakah00.github.io/po1",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
     "start-dev": "webpack serve --config webpack.dev.js --host localhost",
     "serve": "http-server dist -p 8080 -c-1",
     "predeploy": "npm run build",
@@ -27,7 +34,12 @@
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.15.0",
+<<<<<<< HEAD
     "webpack-merge": "^5.9.0"
+=======
+    "webpack-merge": "^5.9.0",
+    "workbox-webpack-plugin": "^7.3.0"
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
   },
   "dependencies": {
     "leaflet": "^1.9.4"

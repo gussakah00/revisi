@@ -46,6 +46,10 @@ class PushManager {
       } catch (error) {
         console.error("PushManager: Init error:", error);
 
+<<<<<<< HEAD
+=======
+        // Fallback ke localStorage di development
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
         if (this._isDevelopment()) {
           console.log("PushManager: Development fallback to localStorage");
           const stored = localStorage.getItem("pushSubscription");
@@ -88,6 +92,10 @@ class PushManager {
         throw new Error("Izin notifikasi ditolak");
       }
 
+<<<<<<< HEAD
+=======
+      // Di development, simpan status di localStorage
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
       if (this._isDevelopment()) {
         console.log("PushManager: Development mode - storing in localStorage");
         localStorage.setItem(
@@ -108,6 +116,10 @@ class PushManager {
 
       console.log("PushManager: Permission granted, subscribing...");
 
+<<<<<<< HEAD
+=======
+      // Unsubscribe existing subscription first
+>>>>>>> 4f29ea4e0f48b8aace6dd97052bd666d42af8f0f
       if (this.subscription) {
         console.log("PushManager: Unsubscribing existing subscription...");
         await this.unsubscribe();
